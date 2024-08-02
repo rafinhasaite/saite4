@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outro Saite</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body onload="carregar()">
+    <header id="header">
+        <h1>Cebolão</h1>
+    </header>
+    <section id="content">
+        <div id="foto">
+            <img src="cblol.webp" alt="cblol">
+        </div>
+        <div>
+            <p> Ano em que perdeu o BV?
+                <input type="number" name="txtano" id="txtano" min="0" max="2024">
+            </p>
+            <p> Qual time vai ganhar o CBLoL?</p>
+            <p>
+                <input type="radio" name="radsex" id="pain" checked>
+                <label for="pain">PNG</label>
+                <input type="radio" name="radsex" id="loud">
+                <label for="loud">LLL</label>
+                <input type="radio" name="radsex" id="keyd">
+                <label for="keyd">VKS</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+            Responde, animal
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Olobis Productions</p>
+    </footer>
+    <video id="bgVideo" autoplay loop preload="auto" style="display: none;">
+        <source src="bgVideo.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+    </video>
+    
+    <script src="script.js"></script>
+</body>
+</html>
